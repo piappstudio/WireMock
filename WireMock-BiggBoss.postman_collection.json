@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "85c2c3d3-0bc3-4dae-8f56-9525b55d0704",
+		"name": "WireMock-BiggBoss",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33855933"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "All Scenarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/__admin/scenarios",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"__admin",
+								"scenarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Mappings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/__admin/mappings/reset",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"__admin",
+								"mappings",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Mappings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/__admin/mappings",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"__admin",
+								"mappings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Scenarios Reset",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/__admin/scenarios/reset",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"__admin",
+								"scenarios",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Shows",
+					"item": [
+						{
+							"name": "Scenario",
+							"item": [
+								{
+									"name": "Empty",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/scenario/shows/empty",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"scenario",
+												"shows",
+												"empty"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Reset",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/scenario/shows/reset",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"scenario",
+												"shows",
+												"reset"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Shows Only",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/scenario/shows/only",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"scenario",
+												"shows",
+												"only"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Reviewers Only",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/scenario/shows/reviewers",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"scenario",
+												"shows",
+												"reviewers"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Bigg Boss Shows",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/v1/biggboss/shows",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"biggboss",
+										"shows"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Config",
+					"item": []
+				},
+				{
+					"name": "Error",
+					"item": [
+						{
+							"name": "Server-Error",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/scenario/trigger-server-down-error",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"scenario",
+										"trigger-server-down-error"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Maintenance-Error",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/scenario/trigger-server-maintenance",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"scenario",
+										"trigger-server-maintenance"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Api-Error",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/scenario/trigger-server-api-error",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"scenario",
+										"trigger-server-api-error"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
