@@ -1,18 +1,25 @@
 # Configuring Wiremock
 
-Use this wiremock to project to configure your mock data for various endpoints and address the intermediate 
-gap between server vs client during the development process.
+Utilize this Wiremock project to configure mock data for various endpoints, bridging the gap between server and client during development.
 
-## To START Server
-1. Make sure java is configured in your command prompt properly.
-2. Open command terminal and execute below command 
+## Starting the Server
+1. Ensure Java is properly configured in your command prompt.
+2. Open a command terminal and execute the following command:
 
+   ```sh
    java -jar wiremock-standalone-3.6.0.jar --port 9191 --verbose --global-response-templating --jetty-header-buffer-size 16384
-3. Kill the command prompt properly to stop the server
+   ```
+3. Properly close the command prompt to stop the server.
 
+## Detecting and Terminating an Existing Listening Port
+Assuming the listening port used is 9191.
 
-## To detect existing listening port and kill it
-Assuming 9191 is the listening port we used.
-### At Windows Machine
-1. netstat -ano | findstr :9191
-2. taskkill /PID 152 /F
+### On Windows
+1. Run the command:
+   ```sh
+   netstat -ano | findstr :9191
+   ```
+2. Terminate the process with:
+   ```sh
+   taskkill /PID 152 /F
+   ```
