@@ -19,7 +19,7 @@ Assuming the listening port used is 9191.
    ```sh
    netstat -ano | findstr :9191
    ```
-2. Terminate the process with:
+2. Terminate the process with: Here, 152 is pid returned above netstat command
    ```sh
    taskkill /PID 152 /F
    ```
