@@ -1,0 +1,12 @@
+{
+  "priority": 1,
+  "scenarioName": "general-server-error",
+  "requiredScenarioState": "server-down-error-started",
+  "request": {
+    "urlPathPattern" : "/(.*)"
+  },
+  "response": {
+    "status": 500,
+    "body": "Server is Down"
+  }
+}

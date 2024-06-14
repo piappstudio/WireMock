@@ -1,0 +1,12 @@
+{
+  "scenarioName": "biggboss-show",
+  "newScenarioState": "default-show",
+  "request": {
+    "method": "POST",
+    "urlPathPattern" : "/scenario/shows/reset"
+  },
+  "response": {
+    "status": 200,
+    "body": "Only shows scenario stated"
+  }
+}

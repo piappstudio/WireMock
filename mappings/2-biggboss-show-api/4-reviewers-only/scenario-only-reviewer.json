@@ -1,0 +1,12 @@
+{
+  "scenarioName": "biggboss-show",
+  "newScenarioState": "shows-reviewers-only",
+  "request": {
+    "method": "POST",
+    "urlPathPattern" : "/scenario/shows/reviewers"
+  },
+  "response": {
+    "status": 200,
+    "body": "Only reviewers scenario stated"
+  }
+}

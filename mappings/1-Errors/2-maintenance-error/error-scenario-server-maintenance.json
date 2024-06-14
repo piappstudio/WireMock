@@ -1,0 +1,12 @@
+{
+  "scenarioName": "general-server-error",
+  "newScenarioState": "server-maintenance-error-started",
+  "request": {
+    "method": "POST",
+    "urlPathPattern" : "/scenario/trigger-server-maintenance"
+  },
+  "response": {
+    "status": 200,
+    "body": "503 Server maintenance error started"
+  }
+}

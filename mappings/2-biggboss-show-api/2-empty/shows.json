@@ -1,0 +1,15 @@
+{
+  "scenarioName": "biggboss-show",
+  "requiredScenarioState": "shows-empty",
+  "request": {
+    "method": "GET",
+    "url" : "/v1/biggboss/shows"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "biggboss-shows-api/empty_shows.json"
+  }
+}

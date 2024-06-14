@@ -1,0 +1,12 @@
+{
+  "scenarioName": "biggboss-show",
+  "newScenarioState": "shows-only",
+  "request": {
+    "method": "POST",
+    "urlPathPattern" : "/scenario/shows"
+  },
+  "response": {
+    "status": 200,
+    "body": "Only shows scenario stated"
+  }
+}

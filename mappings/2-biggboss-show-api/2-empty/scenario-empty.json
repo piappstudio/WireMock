@@ -1,0 +1,12 @@
+{
+  "scenarioName": "biggboss-show",
+  "newScenarioState": "shows-empty",
+  "request": {
+    "method": "POST",
+    "urlPathPattern" : "/scenario/shows/empty"
+  },
+  "response": {
+    "status": 200,
+    "body": "Empty show scenario stated"
+  }
+}

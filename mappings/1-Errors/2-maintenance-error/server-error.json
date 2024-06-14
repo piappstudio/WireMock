@@ -1,0 +1,12 @@
+{
+  "priority": 1,
+  "scenarioName": "general-server-error",
+  "requiredScenarioState": "server-maintenance-error-started",
+  "request": {
+    "urlPathPattern" : "/(.*)"
+  },
+  "response": {
+    "status": 503,
+    "body": "Server Maintenance Error"
+  }
+}

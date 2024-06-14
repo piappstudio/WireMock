@@ -1,0 +1,12 @@
+{
+  "priority": 1,
+  "scenarioName": "general-server-error",
+  "requiredScenarioState": "server-api-not-found-error-started",
+  "request": {
+    "urlPathPattern" : "/(.*)"
+  },
+  "response": {
+    "status": 404,
+    "body": "404 Server API not found Error"
+  }
+}

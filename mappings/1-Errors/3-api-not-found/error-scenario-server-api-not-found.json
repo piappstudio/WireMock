@@ -1,0 +1,12 @@
+{
+  "scenarioName": "general-server-error",
+  "newScenarioState": "server-api-not-found-error-started",
+  "request": {
+    "method": "POST",
+    "urlPathPattern" : "/scenario/trigger-server-api-error"
+  },
+  "response": {
+    "status": 200,
+    "body": "400 Error Scenario Started"
+  }
+}
