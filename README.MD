@@ -2,6 +2,9 @@
 
 Utilize this Wiremock project to configure mock data for various endpoints, bridging the gap between server and client during development.
 
+## Setup Postman
+1. Install postman and import workspace file "WireMock-BiggBoss.postman_collection.json" available in the root folder.
+
 ## Starting the Server
 1. Ensure Java is properly configured in your command prompt.
 2. Open a command terminal and execute the following command:
