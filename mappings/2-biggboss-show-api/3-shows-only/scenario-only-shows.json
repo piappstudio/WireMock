@@ -3,7 +3,7 @@
   "newScenarioState": "shows-only",
   "request": {
     "method": "POST",
-    "urlPathPattern" : "/scenario/shows"
+    "urlPathPattern" : "/scenario/shows/only"
   },
   "response": {
     "status": 200,

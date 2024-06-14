@@ -10,6 +10,6 @@
     "headers": {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "biggboss-shows-api/only-reviewers.json"
+    "bodyFileName": "biggboss-shows-api/only_reviewers.json"
   }
 }
