@@ -6,6 +6,7 @@ gap between server vs client during the development process.
 ## To START Server
 1. Make sure java is configured in your command prompt properly.
 2. Open command terminal and execute below command 
+
    java -jar wiremock-standalone-3.6.0.jar --port 9191 --verbose --global-response-templating --jetty-header-buffer-size 16384
 3. Kill the command prompt properly to stop the server
 
